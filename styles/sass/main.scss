@@ -8,6 +8,7 @@ $cor-secundaria: #4e75ff;
 $cor-terciaria: #85a0ff;
 $cor-quaternaria: #E8F5C8;
 $cor-default: #CAD4FA;
+$cor-branca: #FFFFFF;
 $gradiente-primario: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
 $gradiente-secundario: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(202, 212, 250, 0.3) 100%);
 //Fontes
@@ -82,7 +83,25 @@ header {
         span {
           color: $cor-secundaria;
         }
-      }      
+      }
+
+      .btn-main {
+        width: 280px;
+        padding: 24px;
+        background-color: $cor-secundaria;
+        color: $cor-branca;
+        border: none;
+        text-align: center;
+        border-radius: 40px;
+        font-family: $ft-textos;
+        font-size: 22px;
+        font-weight: 600;
+        cursor: pointer;
+      }
+
+      .btn-main:hover {
+        background-color: $cor-primaria;
+      }
     }
 
     .img-home {
