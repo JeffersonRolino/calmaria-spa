@@ -1,9 +1,6 @@
-@use './variaveis';
-@use './mixins';
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
 
-/**************************************************************************
-* SEÇÃO NOSSO ESPAÇO
-**************************************************************************/
 #nosso-espaco {
   @include mixins.margem-central(80%);
 
@@ -20,7 +17,7 @@
     }
 
     .espaco-textos {
-      @extend .imgs-espaco;
+      max-width: 587px;
 
       .titulo {
         @include mixins.ff-fs-color(variaveis.$ft-titulos, 2rem, variaveis.$cor-secundaria);

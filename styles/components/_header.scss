@@ -1,9 +1,6 @@
-@use './variaveis';
-@use './mixins';
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
 
-/**************************************************************************
-* header
-**************************************************************************/
 header {
   background: variaveis.$gradiente-primario;
   padding: 2rem;
