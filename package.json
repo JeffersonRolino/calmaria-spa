@@ -1,0 +1,14 @@
+{
+  "name": "calmaria-spa",
+  "version": "1.0.0",
+  "description": "Website for Calmaria SPA",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass ./styles/sass/main.scss ./styles/css/style.css -w"
+  },
+  "author": "Jefferson",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.79.5"
+  }
+}
