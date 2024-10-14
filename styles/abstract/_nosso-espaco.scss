@@ -1,3 +1,4 @@
+@use './variaveis';
 @use './mixins';
 
 /**************************************************************************
@@ -12,6 +13,7 @@
     align-items: center;
     justify-content: space-around;
     gap: 2rem;
+    padding: 2rem;
 
     .imgs-espaco {
       max-width: 500px;
@@ -20,9 +22,24 @@
     .espaco-textos {
       @extend .imgs-espaco;
 
+      .titulo {
+        @include mixins.ff-fs-color(variaveis.$ft-titulos, 2rem, variaveis.$cor-secundaria);
+        font-weight: 400;
+        margin-bottom: 1rem;
+      }
+
+      .infos {
+        @include mixins.ff-fs-color(variaveis.$ft-textos, 1.25rem, variaveis.$cor-primaria);
+        line-height: 150%;
+      }
+
       .separador {
         width: 100%;
       }
+    }
+
+    &:nth-child(2){
+      flex-direction: row-reverse;
     }
   }
 
