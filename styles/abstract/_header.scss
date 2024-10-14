@@ -29,9 +29,13 @@ header {
 
       a {
         text-decoration: none;
-        color: variaveis.$cor-primaria;
+        @include mixins.ff-fs-color(variaveis.$ft-textos, 1rem, variaveis.$cor-primaria);
         font-weight: 500;
-        font-family: variaveis.$ft-textos;
+      }
+
+      a:hover {
+        cursor: pointer;
+        color: variaveis.$cor-secundaria;
       }
     }
   }
@@ -47,10 +51,8 @@ header {
       max-width: 464px;
 
       h1 {
-        font-size: 42px;
-        color: variaveis.$cor-primaria;
+        @include mixins.ff-fs-color(variaveis.$ft-titulos, 42px, variaveis.$cor-primaria);
         margin-bottom: 2rem;
-        font-family: variaveis.$ft-titulos;
 
         span {
           color: variaveis.$cor-secundaria;
@@ -60,13 +62,11 @@ header {
       .btn-main {
         width: 280px;
         padding: 24px;
+        @include mixins.ff-fs-color(variaveis.$ft-textos, 22px, variaveis.$cor-branca);
         background-color: variaveis.$cor-secundaria;
-        color: variaveis.$cor-branca;
         border: none;
         text-align: center;
         border-radius: 40px;
-        font-family: variaveis.$ft-textos;
-        font-size: 22px;
         font-weight: 600;
         cursor: pointer;
       }
