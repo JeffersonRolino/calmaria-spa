@@ -185,5 +185,11 @@ header #home .img-home img {
   align-items: center;
   gap: 2rem;
 }
+#desconto .desconto-form .input-btn {
+  width: 790px;
+  height: 65px;
+  border: 1px solid #4e75ff;
+  margin: 0 auto;
+}
 
 /*# sourceMappingURL=style.css.map */
